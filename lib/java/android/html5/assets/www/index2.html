@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>My First Cordova YUI App</title>
+<script type="text/javascript" src="phonegap-1.0.0.js"></script>
+<script type="text/javascript" src="yui-file-1.js"></script>
+<script type="text/javascript" src="yui-file-2.js"></script>
+<script type="text/javascript">YUI_CONFIG = { bootstrap: false };</script>
+</head>
+<body>
+
+<h1>YUI PhoneGap (Cordova) Example</h1>
+<p>Click this button for a surprise</p>
+<button>Click Me</button>
+
+<script type="text/javascript">
+YUI().use('*', function(Y) {
+
+	var button = Y.one('button'),
+		header = Y.one('h1');
+	
+	button.on('touchstart', function(e) {
+		header.setStyle('color', '#00B2EE');
+	});
+
+});
+</script>
+</body>
+</html>
