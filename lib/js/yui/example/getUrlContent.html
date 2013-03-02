@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>YUI Library test</title>
+    <script src="http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js"></script>
+    <script src="../lib.js"></script>
+</head>
+<body>
+<div class="result"></div>
+<script>
+YUI().use('cwnga', function (Y) {
+    url = 'http://tw.yahoo.com';
+    Y.CWNGA.getUrlContent(url);
+});
+</script>
+</body>
+
