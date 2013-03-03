@@ -1,0 +1,61 @@
+<html>
+
+<head>
+
+    <script src="http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js"></script>
+    <script>
+// instead of service.php?callback=handleJSONP
+
+    YUI().use('jsonp', 'jsonp-url','node', function (Y) {
+//     //var url = "./a.html?callback=handleJSONP";
+//     
+//     
+//     handleJSONP = function (response) {
+//         // response is a JavaScript object. No parsing necessary
+//         alert('a');
+//         console.log("hihihi");
+//     
+//         console.log(response.outputHTML);
+//         Y.one("#output").setHTML(response.outputHTML);
+//     };
+//     Y.jsonp(url, handleJSONP);
+//     
+//     // or
+//     var service = new Y.JSONPRequest(url, handleJSONP);
+//     service.send();
+
+Y.namespace('MyApp');
+Y.MyApp.handleJSONP = function (data) {
+
+alert('111');
+
+    Y.one("#output").setHTML(data.outputHTML);
+}; 
+Y.one("#output").setHTML('aaa');
+
+Y.MyApp.handleFailure = function (data) {
+
+alert('111');
+	
+console.log('fail');
+};
+//Y.jsonp(url+"Y.MyApp.handleJSONP");
+
+// or
+ url = "http://tw.serviceplus.yahoo.com/rss/ws_rss?callback={callback}";
+Y.jsonp(url, {
+    context: Y.MyApp,
+    on: {
+        success: Y.MyApp.handleJSONP,
+        failure: Y.MyApp.handleFailure
+    }
+});
+console.log('hji');
+});
+</script>
+</head>
+
+<body>
+<div id="output" name="output">
+</div>
+</body>
