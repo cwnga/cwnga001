@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>YUI Library test</title>
+    <script src="http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js"></script>
+ <STYLE type="text/css">
+   #myid {border-width: 1; border: solid; text-align: center}
+/* Bounding Box */
+.yui3-scrollview {
+    position: relative; /* To provide positioning context */
+    overflow: hidden;   /* To clip scrolled content */
+}
+
+/* Content Box */
+.yui3-scrollview-content {
+    position:relative; /* To allow positioning */
+}
+.yui3-scrollview-content ul {
+    margin:0;
+    padding:0;
+}
+
+.yui3-scrollview-content li {
+    padding:0;
+    margin:0;
+
+    list-style:none;
+
+    /* cross browser inline block */
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+
+}
+
+
+ </STYLE>
+<script>
+YUI().use("scrollview-base", "scrollview-paginator", function(Y) {
+
+    /* ScrollView without paginator */
+    var scrollview = new Y.ScrollView({
+        srcNode:"#scrollable",
+        height:"20em"
+    });
+
+    /* Plug in pagination support */
+    scrollview.plug(Y.Plugin.ScrollViewPaginator, {
+        selector: "li" // elements definining page boundaries
+    });
+
+    /*
+       scrollview.pages is an instance of the ScrollViewPaginator
+       plugin
+    */
+    //scrollview.pages.set("index", 3);
+//    scrollview.pages.scrollTo(3, 0.6, "ease-in");
+  //  scrollview.pages.next();
+    scrollview.pages.get("total");
+});
+</script>
+</head>
+<body  class="yui3-skin-sam">
+<div class="yui3-widget yui3-scrollview yui3-scrollview-vert" style="height: 310px;">
+
+    <!-- Content Box, which is scrolled using either top/left, or transform:translate, where supported -->
+    <div class="yui3-scrollview-content" id="scrollable" style="left: 0px; top: 0px;">
+<ui>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+</ui>
+    </div>
+
+    <!-- Scrollbar indicator, if Scrollbar Plugin is added (added by default for the "scrollview" module) -->
+    <div class="yui3-scrollview-scrollbar yui3-scrollview-scrollbar-vert">
+        <span class="yui3-scrollview-child yui3-scrollview-first"></span>
+        <span class="yui3-scrollview-child yui3-scrollview-middle"></span>
+        <span class="yui3-scrollview-child yui3-scrollview-last"></span>
+    </div>
+
+</div>
+</div>
+</body>
+

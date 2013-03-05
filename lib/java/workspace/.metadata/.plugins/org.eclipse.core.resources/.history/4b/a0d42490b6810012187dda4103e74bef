@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>test1</title>
+
+  <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js">
+  alert("hello!!");
+  </script>      
+
+  <script type="text/javascript" charset="utf-8">
+YUI({
+    //Last Gallery Build of this module
+    gallery: 'gallery-2012.06.20-20-07'
+}).use('node', 'gallery-yql-rest-client', function(Y) {
+
+    Y.one('#a1').on('click', function() {
+        Y.YQLRESTClient.request({
+            method: 'get',
+            //url: 'http://tw.serviceplus.yahoo.com'
+            url: 'http://tw.serviceplus.yahoo.com/rss/ws_rss'
+        }, function(result) {
+            alert(result.response);
+        });
+    });
+});
+  
+  
+  
+  
+  
+
+     function onLoad(){
+
+          document.addEventListener("deviceready", onDeviceReady, true);
+
+     }
+
+     function onDeviceReady(){
+
+          navigator.notification.alert("ezcshi phonegap sample!!");
+
+     }
+
+  </script>
+
+  </head>
+
+  <body onload="onLoad();">
+       <h1>Welcome to PhoneGap</h1>
+
+       <h2>Try it!</h2>
+       <br/>
+       <button onClick="onLoad();" type="button">Click Me!</button>
+       <a href="#" id="a1">點我抓測試頁面1</a>
+       <div class="result"></div>
+  </body>
+
+</html>

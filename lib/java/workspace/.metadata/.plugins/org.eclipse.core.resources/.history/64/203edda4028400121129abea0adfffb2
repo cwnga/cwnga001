@@ -1,0 +1,76 @@
+<html>
+
+<head>
+
+    <script src="http://yui.yahooapis.com/3.8.1/build/yui/yui-min.js"></script>
+    <script>
+YUI().use("jsonp", "node",function (Y) {
+
+    var user      = Y.one("#github_user"),
+        githubAPI = "https://api.github.com/users/",
+        template  = // assignment continued below
+        
+    '<table>' +
+        '<caption>GitHub user <code>{login}</code> ({name})</caption>' +
+        '<thead>' +
+            '<tr>' +
+                '<th>Repositories</th>' +
+                '<th>Gists</th>' +
+                '<th>Followers</th>' +
+                '<th>Following</th>' +
+            '</tr>' +
+        '</thead>' +
+        '<tbody>' +
+            '<tr>' +
+                '<td>{public_repos}</td>' +
+                '<td>{public_gists}</td>' +
+                '<td>{followers}</td>' +
+                '<td>{following}</td>' +
+            '</tr>' +
+        '</tbody>' +
+    '</table>';
+
+    function handleJSONP(response) {
+        console.log(response.data);
+        Y.one("#out").setHTML(Y.Lang.sub(template, response.data));
+    }
+
+    Y.one("#demo_btn").on("click", function (e) {
+        // e.g. https://api.github.com/users/yui?callback={callback}
+        var url = githubAPI + user.get("value") + "?callback={callback}";
+console.log(url);
+url = 'https://api.github.com/users/yui?callback={callback}';
+url = 'https://raw.github.com/cwnga/cwnga001/master/lib/js/yui/data/json.html?callback={callback}';
+        Y.jsonp(url, handleJSONP);
+    });
+
+});
+</script>
+</head>
+
+<body>
+
+    <div id="demo">
+    <select id="github_user">
+        <option value="yui">YUI Library</option>
+        <option value="allenrabinovich">Allen Rabinovich</option>
+        <option value="davglass">Dav Glass</option>
+        <option value="derek">Derek Gathright</option>
+        <option value="ericf">Eric Ferraiuolo</option>
+        <option value="jenny">Jenny Donnelly</option>
+        <option value="lsmith">Luke Smith</option>
+        <option value="msweeney">Matt Sweeney</option>
+        <option value="reid">Reid Burke</option>
+        <option value="rgrove">Ryan Grove</option>
+        <option value="sdesai">Satyen Desai</option>
+        <option value="tripp">Tripp Bridges</option>
+    </select>
+    <input type="button" id="demo_btn" value="Get user info">
+    <div id="out">
+    </div>
+</div>
+
+
+<div id="out" name="output">
+</div>
+</body>

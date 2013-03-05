@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="http://yui.yahooapis.com/3.8.1/build/yui/yui-min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.8.1/build/cssreset/cssreset-min.css">
+<script>
+YUI({gallery: 'gallery-2013.02.27-21-03'}).use('gallery-bottle', function (Y) {
+    var srcNode, viewerWidget;
+
+    Y.Bottle.init(true);
+
+    srcNode = Y.one('[data-role=viewer]');  //viewer srcNode
+    viewerWidget = Y.Widget.getByNode(srcNode); //viewer widget
+});
+</script>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.8.1/build/cssreset/cssreset-min.css">
+</head>
+<body>
+<div data-role="viewer">
+ <p>
+  <img src="http://l.yimg.com/f/i/tw/hp/mh/12purple.gif">
+ </p>
+</div>
+
+<div data-role="viewer">
+ <p>
+  <img src="http://l.yimg.com/f/i/tw/hp/mh/12purple.gif">
+ </p>
+</div>
+
+
+<div data-role="viewer">
+ <p>
+  <img src="http://l.yimg.com/f/i/tw/hp/mh/12purple.gif">
+ </p>
+</div>
+
+</body>
+</html>

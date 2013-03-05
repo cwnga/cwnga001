@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/.metadata/.plugins/org.eclipse.jdt.core
+581725680.index
+1236362945.index
+3683991487.index
+4013604941.index
+3446767196.index
