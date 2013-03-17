@@ -1,0 +1,23 @@
+<head>
+<script src="http://yui.yahooapis.com/3.7.3/build/yui/yui-min.js"></script>
+<script>
+YUI().use('yql', function(Y) {
+          var a = 'tt';
+          //var q = Y.YQL('select * from weather.forecast where location=90210', function(r, a) {
+          var q = Y.YQL('SELECT * FROM bbc.goodfood.seasonal', function(r, a) {
+                        //r now contains the result of the YQL Query
+                        a = r;
+                        alert(JSON.stringify(a));
+
+                        });
+
+          //Sometime later
+          //q._params.q = 'select * from weather.forecast where location=62959';
+          //q.send();
+
+          });
+</script>
+</head>
+<body>
+
+</body>
