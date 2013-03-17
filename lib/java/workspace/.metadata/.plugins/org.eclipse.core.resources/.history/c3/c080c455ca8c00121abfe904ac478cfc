@@ -1,0 +1,14 @@
+<html>
+<head>
+<script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+<script src="http://yui.yahooapis.com/3.8.1/build/yui/yui-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./slide.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+<input type="button" id="" style="">
+<div id = "renderdiv">
+</div>
+</body>
+</html>

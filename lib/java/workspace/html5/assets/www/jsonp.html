@@ -1,0 +1,58 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="http://freshcutsd.com/wp-content/themes/freshcut-v2/style.css" type="text/css">
+
+  <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0.js"></script>
+    <script src="http://yui.yahooapis.com/3.8.1/build/yui/yui-min.js"></script>
+    <script>
+    YUI(
+{gallery: 'gallery-2011.04.20-13-04'})
+.use("gallery-yui-slideshow","jsonp", "node",function (Y) {
+        function handleJSONP(response) {
+            console.log(response.total);
+            //console.log(response.result);
+            j = 0;
+            for (i in response.result) {
+                imageJson = JSON.parse(response.result[i].images);
+                imgsrc = JSON.stringify(imageJson.large.url);
+                htmlcode = Y.one("#renderdiv").getHTML();
+                imgsrc = "<img src="+imgsrc+"><br/>";
+                htmlcode = htmlcode + imgsrc;
+                Y.one("#renderdiv").setHTML(htmlcode);
+            }
+
+
+///< slide show
+var slideshow = new Y.Slideshow({
+                srcNode: '#renderdiv',
+                transition: Y.Slideshow.PRESETS.slideRight,
+                duration: 1,
+                interval: 2,
+                nextButton: '#nextButton',
+                previousButton: '#previousButton'
+        });
+slideshow.render();
+
+
+
+            }
+
+        Y.one("#demo_btn").on("click", function (e) {
+            url = 'http://f0.adp.tw1.yahoo.com/rss/ws_rss?format=jsonp&callback={callback}';
+            Y.jsonp(url, handleJSONP);
+        });
+
+
+    });
+</script>
+
+</head>
+
+<body>
+    <input type="button" id="demo_btn" value="GetData" style="height: 200px; width: 200px">
+    <input type="button" id="previousButton" value="prev" style="height: 200px; width: 200px">
+    <input type="button" id="nextButton" value="next" style="height: 200px; width: 200px">
+<div id="renderdiv"></div>
+
+</body></html>

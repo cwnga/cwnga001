@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<script src="http://yui.yahooapis.com/3.8.1/build/yui/yui-min.js"></script>
+<script>
+YUI().use("jsonp", "node",function (Y) {
+
+
+          function handleJSONP(response) {
+          console.log(response.data);
+          }
+
+          function vocka(response) {
+          console.log(response.data);
+          }
+
+          Y.one("#demo_btn").on("click", function (e) {
+                                var url = 'http://cheecheemomo.herokuapp.com/services/example.php?jsoncallback=?&callback={callback}';
+                                console.log(url);
+                                Y.jsonp(url, vocka);
+                                });
+
+          });
+
+function vocka(response) {
+    console.log(response);
+}
+
+
+</script>
+</head>
+
+<body>
+
+<div id="demo">
+   <input type="button" id="demo_btn" value="get ws data">
+    <div id="out">
+    </div>
+</div>
+
+
+<div >
+    主要回傳的data， 除了資料外，還要包括callback function name<br/>
+    例如回傳data，{a: 'a'}</br>
+    但回傳的時候就會為callback({a: 'a'})</br>
+</div>
+
+</body>

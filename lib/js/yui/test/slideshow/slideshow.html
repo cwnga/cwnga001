@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>YUI Library test</title>
+    <script src="http://yui.yahooapis.com/3.5.0/build/yui/yui-min.js"></script>
+<link rel="stylesheet" href="http://freshcutsd.com/wp-content/themes/freshcut-v2/style.css" type="text/css">
+<script>
+YUI({
+
+        gallery: 'gallery-2011.04.20-13-04' // Last Gallery Build of this module.
+
+}).use('gallery-yui-slideshow', function(Y) {
+var slideshow = new Y.Slideshow({
+                srcNode: '#slideshow1',
+                transition: Y.Slideshow.PRESETS.slideRight,
+                duration: 1,
+                interval: 2,
+                nextButton: '#someID'
+        });
+slideshow.render();
+
+
+});
+</script>
+
+</head>
+<body>
+<div id="slideshow1" class="slideshow yui3-slideshow-content">
+    <img src="img/img1.jpg" alt="Cave" />
+    <img src="img/img2.jpg" alt="Planet" />
+</div>
+<button id="someID"> next</button>
+</body>

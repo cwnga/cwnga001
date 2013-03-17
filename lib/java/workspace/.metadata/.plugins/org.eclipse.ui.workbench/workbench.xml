@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="14" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
 <window height="698" width="1024" x="139" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -24,6 +24,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -39,17 +40,58 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/html5/src/com/example/html5/MainActivity.java" title="MainActivity.java" tooltip="html5/src/com/example/html5/MainActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/html5/src/com/example/html5/MainActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="425" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="ws.html" partName="ws.html" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/html5/assets/www/ws.html" title="ws.html" tooltip="html5/assets/www/ws.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/html5/assets/www/ws.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="218"/>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="demo.html" partName="demo.html" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/html5/assets/www/slider/demo/demo.html" title="demo.html" tooltip="html5/assets/www/slider/demo/demo.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/html5/assets/www/slider/demo/demo.html"/>
+<editorState selectionHorizontalPixel="130" selectionLength="0" selectionOffset="1622" selectionTopPixel="173"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_android_speech_recognition.xml" partName="activity_android_speech_recognition.xml" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/speech/res/layout/activity_android_speech_recognition.xml" title="activity_android_speech_recognition.xml" tooltip="speech/res/layout/activity_android_speech_recognition.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/speech/res/layout/activity_android_speech_recognition.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AndroidSpeechRecognition.java" partName="AndroidSpeechRecognition.java" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/speech/src/com/example/speech/AndroidSpeechRecognition.java" title="AndroidSpeechRecognition.java" tooltip="speech/src/com/example/speech/AndroidSpeechRecognition.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/speech/src/com/example/speech/AndroidSpeechRecognition.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="57" selectionTopPixel="0"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" partName="strings.xml" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/speech/res/values/strings.xml" title="strings.xml" tooltip="speech/res/values/strings.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/speech/res/values/strings.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sample_5_1.java" partName="Sample_5_1.java" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/Sample_5_1/src/wyf/ytl/Sample_5_1.java" title="Sample_5_1.java" tooltip="Sample_5_1/src/wyf/ytl/Sample_5_1.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Sample_5_1/src/wyf/ytl/Sample_5_1.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="444" selectionTopPixel="0"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" partName="activity_main.xml" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/jsonparser/res/layout/activity_main.xml" title="activity_main.xml" tooltip="jsonparser/res/layout/activity_main.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jsonparser/res/layout/activity_main.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/jsonparser/src/com/example/jsonparser/MainActivity.java" title="MainActivity.java" tooltip="jsonparser/src/com/example/jsonparser/MainActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/jsonparser/src/com/example/jsonparser/MainActivity.java"/>
+<editorState selectionHorizontalPixel="7" selectionLength="0" selectionOffset="1378" selectionTopPixel="398"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sample_10_2.java" partName="Sample_10_2.java" path="/Users/cwnga/Desktop/anson/code/android/book/androidbook1/samples/sample10/Sample_10_2/src/wyf/wpf/Sample_10_2.java" title="Sample_10_2.java" tooltip="Sample_10_2/src/wyf/wpf/Sample_10_2.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Sample_10_2/src/wyf/wpf/Sample_10_2.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="982" selectionTopPixel="509"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" partName="strings.xml" path="/Users/cwnga/Desktop/anson/code/android/book/androidbook1/samples/sample10/Sample_10_2/res/values/strings.xml" title="strings.xml" tooltip="Sample_10_2/res/values/strings.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Sample_10_2/res/values/strings.xml"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="jsonp.html" partName="jsonp.html" path="/Users/cwnga/Desktop/anson/code/git/cwnga001/lib/java/workspace/html5/assets/www/jsonp.html" title="jsonp.html" tooltip="html5/assets/www/jsonp.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/html5/assets/www/jsonp.html"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1859" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -66,9 +108,6 @@
 <view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors (1 item)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -112,7 +151,7 @@
 <view id="com.android.ide.eclipse.ddms.views.AllocTrackerView" partName="Allocation Tracker"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.ui.DefaultTextEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
 <descriptor class="com.android.ide.eclipse.ddms.Perspective" id="com.android.ide.eclipse.ddms.Perspective" label="DDMS"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -267,7 +306,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7487765" ratioLeft="459" ratioRight="154" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.53061223" ratioLeft="312" ratioRight="276" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -308,6 +347,17 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Sample_7_2/src/wyf/ytl/Sample_7_2.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/html5/src/com/example/html5/MainActivity.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/html5/assets/www/ws.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/html5/src/com/example/html5/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/html5/assets/www/slider/demo/demo.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/speech/res/layout/activity_android_speech_recognition.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/speech/src/com/example/speech/AndroidSpeechRecognition.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/speech/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Sample_5_1/src/wyf/ytl/Sample_5_1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/jsonparser/res/layout/activity_main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jsonparser/src/com/example/jsonparser/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Sample_10_2/src/wyf/wpf/Sample_10_2.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/Sample_10_2/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/html5/assets/www/jsonp.html"/>
 </editors>
 <item historyLabel="MainActivity.java" index="0">
 <position info="not_deleted" x="651" y="0"/>
@@ -327,7 +377,58 @@
 <item historyLabel="MainActivity.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="ws.html" index="4">
+<item historyLabel="ws.html" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="5">
+<position info="not_deleted" x="425" y="0"/>
+</item>
+<item historyLabel="demo.html" index="6">
+<position info="not_deleted" x="871" y="0"/>
+</item>
+<item historyLabel="demo.html" index="6">
+<position info="not_deleted" x="1622" y="0"/>
+</item>
+<item historyLabel="activity_android_speech_recognition.xml" index="7"/>
+<item historyLabel="AndroidSpeechRecognition.java" index="8">
+<position info="not_deleted" x="27" y="0"/>
+</item>
+<item historyLabel="activity_android_speech_recognition.xml" index="7"/>
+<item historyLabel="strings.xml" index="9"/>
+<item historyLabel="activity_android_speech_recognition.xml" index="7"/>
+<item historyLabel="strings.xml" index="9"/>
+<item historyLabel="activity_android_speech_recognition.xml" index="7"/>
+<item historyLabel="AndroidSpeechRecognition.java" index="8">
+<position info="not_deleted" x="27" y="0"/>
+</item>
+<item historyLabel="AndroidSpeechRecognition.java" index="8">
+<position info="not_deleted" x="616" y="0"/>
+</item>
+<item historyLabel="Sample_5_1.java" index="10">
+<position info="not_deleted" x="444" y="13"/>
+</item>
+<item historyLabel="AndroidSpeechRecognition.java" index="8">
+<position info="not_deleted" x="616" y="0"/>
+</item>
+<item historyLabel="activity_android_speech_recognition.xml" index="7"/>
+<item historyLabel="AndroidSpeechRecognition.java" index="8">
+<position info="not_deleted" x="57" y="0"/>
+</item>
+<item historyLabel="activity_main.xml" index="11"/>
+<item historyLabel="MainActivity.java" index="12">
+<position info="not_deleted" x="1378" y="0"/>
+</item>
+<item historyLabel="Sample_10_2.java" index="13">
+<position info="not_deleted" x="2367" y="0"/>
+</item>
+<item historyLabel="Sample_10_2.java" index="13">
+<position info="not_deleted" x="632" y="0"/>
+</item>
+<item historyLabel="strings.xml" index="14"/>
+<item historyLabel="Sample_10_2.java" index="13">
+<position info="not_deleted" x="632" y="0"/>
+</item>
+<item active="true" historyLabel="jsonp.html" index="15">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -348,6 +449,36 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="jsonp.html" tooltip="html5/assets/www/jsonp.html">
+<persistable path="/html5/assets/www/jsonp.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="Sample_10_2/res/values/strings.xml">
+<persistable path="/Sample_10_2/res/values/strings.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sample_10_2.java" tooltip="Sample_10_2/src/wyf/wpf/Sample_10_2.java">
+<persistable path="/Sample_10_2/src/wyf/wpf/Sample_10_2.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="jsonparser/src/com/example/jsonparser/MainActivity.java">
+<persistable path="/jsonparser/src/com/example/jsonparser/MainActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="jsonparser/res/layout/activity_main.xml">
+<persistable path="/jsonparser/res/layout/activity_main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sample_5_1.java" tooltip="Sample_5_1/src/wyf/ytl/Sample_5_1.java">
+<persistable path="/Sample_5_1/src/wyf/ytl/Sample_5_1.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="speech/res/values/strings.xml">
+<persistable path="/speech/res/values/strings.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AndroidSpeechRecognition.java" tooltip="speech/src/com/example/speech/AndroidSpeechRecognition.java">
+<persistable path="/speech/src/com/example/speech/AndroidSpeechRecognition.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_android_speech_recognition.xml" tooltip="speech/res/layout/activity_android_speech_recognition.xml">
+<persistable path="/speech/res/layout/activity_android_speech_recognition.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="demo.html" tooltip="html5/assets/www/slider/demo/demo.html">
+<persistable path="/html5/assets/www/slider/demo/demo.html"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="ws.html" tooltip="html5/assets/www/ws.html">
 <persistable path="/html5/assets/www/ws.html"/>
 </file>
@@ -359,21 +490,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sample_7_1.java" tooltip="Sample_7_1/src/wyf/ytl/Sample_7_1.java">
 <persistable path="/Sample_7_1/src/wyf/ytl/Sample_7_1.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="ws.html" tooltip="MainActivity/assets/www/ws.html">
-<persistable path="/MainActivity/assets/www/ws.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="index.html" tooltip="MainActivity/assets/www/index.html">
-<persistable path="/MainActivity/assets/www/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="MainActivity/src/com/example/html5/MainActivity.java">
-<persistable path="/MainActivity/src/com/example/html5/MainActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SampleCvViewBase.java" tooltip="FdActivity/src/org/opencv/samples/fd/SampleCvViewBase.java">
-<persistable path="/FdActivity/src/org/opencv/samples/fd/SampleCvViewBase.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DetectionBasedTracker.java" tooltip="FdActivity/src/org/opencv/samples/fd/DetectionBasedTracker.java">
-<persistable path="/FdActivity/src/org/opencv/samples/fd/DetectionBasedTracker.java"/>
 </file>
 </mruList>
 </workbench>

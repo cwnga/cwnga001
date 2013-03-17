@@ -1,0 +1,67 @@
+package wyf.wpf;			//宣告套件名稱
+import java.io.BufferedInputStream;
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
+
+import org.apache.http.util.ByteArrayBuffer;
+import org.apache.http.util.EncodingUtils;
+
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+public class Sample_10_2 extends Activity {
+	String stringURL = "http://tw.yahoo.com";
+	String bitmapURL = "http://l.yimg.com/f/i/tw/hp/mh/12purple.gif";
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        Button btn = (Button)findViewById(R.id.btn);		//取得Button物件
+        btn.setOnClickListener(new View.OnClickListener() {
+			//@Override
+			public void onClick(View v) {		//重寫onClick方法
+				getStringURLResources();		//取得字串資源
+				getBitmapURLResources();		//取得圖片資源
+			}
+		});
+    }
+    //方法，根據指定URL字串抓取網路資源
+    public void getStringURLResources(){
+    	try{
+    		URL myUrl = new URL(stringURL);
+    		URLConnection myConn = myUrl.openConnection();	//開啟連線
+    		InputStream in = myConn.getInputStream();		//取得輸入串流
+    		BufferedInputStream bis = new BufferedInputStream(in);//抓取BufferedInputStream物件
+    		ByteArrayBuffer baf = new ByteArrayBuffer(bis.available());
+    		int data = 0;
+    		while((data = bis.read())!= -1){		//讀取BufferedInputStream中資料
+    			baf.append((byte)data);				//將資料置入ByteArrayBuffer中
+    		}
+    		String msg = EncodingUtils.getString(baf.toByteArray(), "UTF-8");	//轉換為字串
+    		EditText et = (EditText)findViewById(R.id.et);		//取得EditText物件
+    		et.setText(msg);						//設定EditText控制項的內容
+    	}
+    	catch(Exception e){
+    		e.printStackTrace();
+    	}
+    }
+    public void getBitmapURLResources(){
+    	try{
+    		URL myUrl = new URL(bitmapURL);	//建立URL物件
+    		URLConnection myConn = myUrl.openConnection();		//開啟連線
+    		InputStream in = myConn.getInputStream();			//取得InputStream物件
+    		Bitmap bmp = BitmapFactory.decodeStream(in);		//建立Bitmap
+    		ImageView iv = (ImageView)findViewById(R.id.iv);	//取得ImageView物件
+    		iv.setImageBitmap(bmp);					//設定ImageView顯示的內容
+    	}
+    	catch(Exception e){
+    		e.printStackTrace();
+    	}
+    }
+}

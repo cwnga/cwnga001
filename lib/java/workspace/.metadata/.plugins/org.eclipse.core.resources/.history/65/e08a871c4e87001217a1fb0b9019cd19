@@ -1,0 +1,67 @@
+package wyf.wpf;			//�ŧi�M��W��
+import java.io.BufferedInputStream;
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
+
+import org.apache.http.util.ByteArrayBuffer;
+import org.apache.http.util.EncodingUtils;
+
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+public class Sample_10_2 extends Activity {
+	String stringURL = "http://www.raymondcamden.com/index.cfm/2011/12/2/Adding-voicebased-search-to-a-PhoneGap-app";
+	String bitmapURL = "http://l.yimg.com/f/i/tw/hp/mh/12purple.gif";
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        Button btn = (Button)findViewById(R.id.btn);		//��oButton����
+        btn.setOnClickListener(new View.OnClickListener() {
+			//@Override
+			public void onClick(View v) {		//���gonClick��k
+				getStringURLResources();		//��o�r��귽
+				getBitmapURLResources();		//��o�Ϥ�귽
+			}
+		});
+    }
+    //��k�A�ھګ�wURL�r��������귽
+    public void getStringURLResources(){
+    	try{
+    		URL myUrl = new URL(stringURL);
+    		URLConnection myConn = myUrl.openConnection();	//�}�ҳs�u
+    		InputStream in = myConn.getInputStream();		//��o��J��y
+    		BufferedInputStream bis = new BufferedInputStream(in);//���BufferedInputStream����
+    		ByteArrayBuffer baf = new ByteArrayBuffer(bis.available());
+    		int data = 0;
+    		while((data = bis.read())!= -1){		//Ū��BufferedInputStream�����
+    			baf.append((byte)data);				//�N��Ƹm�JByteArrayBuffer��
+    		}
+    		String msg = EncodingUtils.getString(baf.toByteArray(), "UTF-8");	//�ഫ���r��
+    		EditText et = (EditText)findViewById(R.id.et);		//��oEditText����
+    		et.setText(msg);						//�]�wEditText��������e
+    	}
+    	catch(Exception e){
+    		e.printStackTrace();
+    	}    
+    }
+    public void getBitmapURLResources(){
+    	try{
+    		URL myUrl = new URL(bitmapURL);	//�إ�URL����
+    		URLConnection myConn = myUrl.openConnection();		//�}�ҳs�u
+    		InputStream in = myConn.getInputStream();			//��oInputStream����
+    		Bitmap bmp = BitmapFactory.decodeStream(in);		//�إ�Bitmap
+    		ImageView iv = (ImageView)findViewById(R.id.iv);	//��oImageView����
+    		iv.setImageBitmap(bmp);					//�]�wImageView��ܪ����e
+    	}
+    	catch(Exception e){
+    		e.printStackTrace();
+    	}
+    }
+}
