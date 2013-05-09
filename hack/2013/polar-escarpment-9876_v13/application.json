@@ -1,0 +1,70 @@
+[{
+    "settings": ["master"],
+    "appPort": "3000",
+    "middleware": ["./middleware/bodyParser.js", "./middleware/cookieParser.js", "./middleware/session.js", "./middleware/static.js", "./middleware/checklogin.js"],
+    "specs": {
+        "appointment": {
+            "type": "appointment"
+        },
+
+
+        "spec_weather": {
+            "type": "yahooweather_event"
+        },
+        "facebook_event_frame": {
+            "type": "HTMLFrameMojit",
+            "config": {
+                "deploy": true,
+                "title": "HTMLFrameMojit Example with Children",
+                "child": {
+                    "type": "facebook_html_frame",
+                    "config": {
+                        "children": {
+                            "user": {
+                                "type": "facebook_user"
+                            },
+                            "event": {
+                                "type": "facebook_event_read"
+                            },
+                            "ad_list": {
+                                "type": "ad_list"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "ad_list": {
+            "type": "ad_list"
+        },
+
+
+
+        "facebook_event_cancel": {
+            "type": "facebook_event_cancel"
+        },
+
+
+        "facebook_event_read": {
+            "type": "facebook_event_read"
+        },
+
+
+        "facebook_user": {
+            "type": "facebook_user"
+        },
+
+        "facebook_test": {
+            "type": "facebook"
+        }
+
+    },
+    "staticHandling": {
+        "appName": "global_assets"
+    }
+}, {
+    "settings": ["environment:development"],
+    "staticHandling": {
+        "forceUpdate": true
+    }
+}]

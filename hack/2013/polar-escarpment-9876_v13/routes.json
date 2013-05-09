@@ -1,0 +1,53 @@
+[{
+    "settings": ["master"],
+    "weather_non_use": {
+        "verbs": ["get"],
+        "path": "/yahooweather_event",
+        "call": "spec_weather.index"
+    },
+
+    "appointment": {
+        "verbs": ["get"],
+        "path": "/appointment",
+        "call": "appointment.index"
+    },
+    "html_frame": {
+        "verbs": ["get"],
+        "path": "/facebook_event_frame",
+        "call": "facebook_event_frame.index"
+    },
+    "facebook_event_cancel_display": {
+        "verbs": ["get"],
+        "path": "/facebook_event_cancel_display",
+        "call": "facebook_event_cancel.display"
+    },
+    "ad_list": {
+        "verbs": ["get"],
+        "path": "/ad_list",
+        "call": "ad_list.index"
+    },
+
+    "facebook_event_cancel_ws": {
+        "verbs": ["get"],
+        "path": "/facebook_event_cancel_ws",
+        "call": "facebook_event_cancel.ws"
+    },
+
+
+    "facebook_event_read": {
+        "verbs": ["get"],
+        "path": "/facebook_event_read",
+        "call": "facebook_event_read.index"
+    },
+    "facebook_user": {
+        "verbs": ["get"],
+        "path": "/facebook_user",
+        "call": "facebook_user.index"
+    },
+    "facebook": {
+        "verbs": ["get"],
+        "path": "/",
+        "call": "facebook_test.index"
+    }
+
+}]

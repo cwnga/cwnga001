@@ -1,0 +1,21 @@
+<ul data-role="listview" data-inset="true" >
+    {{#each data}}
+    <li  event_id="{{id}}">
+    {{#if name}}
+    <a href="#dialog" data-rel="dialog" event_id="{{id}}" aid="{{aid}}">
+        {{/if}}
+        <img src="{{weather_img}}" event_id="{{id}}"/>
+        <h3  event_id="{{id}}">{{date}}</h3>
+        {{#if name}}
+        <h3  event_id="{{id}}">{{name}}</h3>
+        <p  event_id="{{id}}">status:{{rsvp_status}}</p>
+        {{/if}}
+        <p  event_id="{{id}}">weather:{{text}}</p>
+        <p  event_id="{{id}}">C:{{low}}/{{high}}</p>
+
+   {{#if name}}
+    </a>
+    {{/if}}
+    </li>
+    {{/each}}
+</ul>
